@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+<div class="layout--span-1-12">
+
+  <h1>Posts</h1>
+
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <small>{{ post.date | date: "%b %-d, %Y" }}</small>
+
+        <h2>
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,53 @@
+
+/*
+Navigation
+---------------------------------------*/
+
+nav ul {
+	padding:0;
+	margin: 0 auto;
+	max-width:960px;
+
+
+ 	li {
+		list-style:none;
+		background:$color-background;
+		text-align:center;
+		border-top:1px solid $color-border;
+		@include border-radius(8px);
+
+		&:hover {
+			background: pink;
+		}
+
+		a {
+			text-decoration:none;
+			padding: 1em 0;
+			display:block;
+		}
+
+	}
+
+}
+
+/*
+Media Queries
+---------------------------------------*/
+
+@media screen and (min-width: 800px) {
+	
+	nav {
+		border-top:1px solid $color-border;
+	}
+
+	nav ul li {
+		float:left;
+		width:20%;
+		border-right:1px solid $color-border;
+		border-top:none;
+	}
+
+	nav ul li:nth-child(1) {
+		border-left:1px solid $color-border;
+	}
+}

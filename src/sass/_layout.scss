@@ -1,0 +1,56 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin:0;
+	font-size:16px;
+	background:$color-background;
+}
+
+a {
+	color: $color-link;
+
+	&:hover {
+		color: $color-link-hover;
+	}
+}
+
+
+
+/*
+
+Layout
+---------------------------------------*/
+
+#wrapper {
+	width:100%;
+	background:#fff;
+	padding: 1em 0;
+}
+
+header,
+#container,
+footer {
+	width:88%;
+	max-width:960px;
+	margin:0 auto;
+}
+
+/* Test
+------------------------------------------*/
+
+.test {
+	@include shadow();
+}
+
+/* Misc.
+------------------------------------------*/
+
+.clearfix:after {
+	content:".";
+	display:block;
+	height: 0;
+	clear:both;
+	visibility:hidden;
+}
